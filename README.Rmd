@@ -35,7 +35,7 @@ This is a basic example which computes the number of missing values in the `airq
 ```{r example}
 library(countAllMissingByGroup)
 
-# Find the number of missing months in the airquality part of datasets
+# Find the number of missing observations within each month in the airquality part of datasets
 count_all_missing_by_group(airquality, Month)
 
 # An alternative way of invoking the `count_all_missing_by_group()`: piping the dataset into the function. 

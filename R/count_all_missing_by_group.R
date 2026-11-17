@@ -22,7 +22,8 @@
 #' `dplyr` for a full list of options.
 #'
 #' @examples
-#' # Find the number of missing months in the airquality part of datasets
+#' # Find the number of missing observations within each month in the
+#' # airquality part of datasets
 #' count_all_missing_by_group(airquality, Month)
 #'
 #' # An alternative way of invoking the `count_all_missing_by_group()`:

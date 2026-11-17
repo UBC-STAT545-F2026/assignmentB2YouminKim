@@ -3,7 +3,8 @@ Title: Count Missing Values by Group
 Version: 0.1.0
 Authors@R: 
     person("You-Min", "Kim", , "youkim@student.ubc.ca", role = c("aut", "cre"))
-Description: Counts missing values across all columns of a data frame within groups by a user specified variable.
+Description: Counts missing values across all columns of a data frame within 
+    groups by a user-specified variable.
 License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
@@ -14,3 +15,5 @@ Suggests:
     testthat (>= 3.0.0),
     tibble
 Config/testthat/edition: 3
+Depends: 
+    R (>= 4.1.0)
