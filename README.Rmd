@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# countAllMissingByGroup
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of countAllMissingByGroup is to count the number of missing values for all columns by group
+
+## Installation
+
+You can install the development version of countAllMissingByGroup by calling:
+
+``` r
+devtools::install_github("UBC-STAT545-F2026/assignmentB2YouminKim")
+```
+
+## Example
+
+This is a basic example which computes the number of missing values in the `airquality` dataset grouped by the `cyl` column. 
+
+```{r example}
+library(countAllMissingByGroup)
+
+# Find the number of missing months in the airquality part of datasets
+count_all_missing_by_group(airquality, Month)
+
+# An alternative way of invoking the `count_all_missing_by_group()`: piping the dataset into the function. 
+airquality |> count_all_missing_by_group(Month) 
+```
+
