@@ -8,7 +8,9 @@
 <!-- badges: end -->
 
 The goal of `countAllMissingByGroup` is to count the number of missing
-values for all columns by group
+values for all columns by a user-specified group. This function works
+across columns in a data frame or tibble and returns a summary table
+containing the missing observations for each column.
 
 ## Installation
 

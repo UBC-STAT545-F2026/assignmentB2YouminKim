@@ -39,6 +39,7 @@
 
 count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
 
+  # Check validity of grouping option
   if(!is.null(.groups)) {
     if(!(.groups %in% c("drop_last", "drop",
                         "keep", "rowwise"))) {
@@ -48,6 +49,7 @@ count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
     }
   }
 
+  # Count missing observations in group
   data |> dplyr::group_by({{ group_col }}) |>
     dplyr::summarize(dplyr::across(dplyr::everything(), ~sum(is.na(.x))),
               .groups = .groups)
