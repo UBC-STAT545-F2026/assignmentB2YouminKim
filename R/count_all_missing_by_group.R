@@ -21,6 +21,14 @@
 #' `group`. See `summarize()` documentation in
 #' `dplyr` for a full list of options.
 #'
+#' @examples
+#' # Find the number of missing months in the airquality part of datasets
+#' count_all_missing_by_group(airquality, Month)
+#'
+#' # An alternative way of invoking the `count_all_missing_by_group()`:
+#' # piping the dataset into the function.
+#' airquality |> count_all_missing_by_group(Month)
+#'
 #' @return A data frame or tibble with the
 #' levels of `group`, and the  number of NAs within
 #' each level of `group` for all columns in

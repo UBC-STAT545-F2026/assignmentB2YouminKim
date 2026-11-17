@@ -38,3 +38,12 @@ This function is
 a wrapper around the \code{group_by()} and
 \code{summarize()} functions in the \code{dplyr} package.
 }
+\examples{
+# Find the number of missing months in the airquality part of datasets
+count_all_missing_by_group(airquality, Month)
+
+# An alternative way of invoking the `count_all_missing_by_group()`:
+# piping the dataset into the function.
+airquality |> count_all_missing_by_group(Month)
+
+}

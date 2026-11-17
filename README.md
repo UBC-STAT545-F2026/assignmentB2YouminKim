@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-The goal of countAllMissingByGroup is to count the number of missing
+The goal of `countAllMissingByGroup` is to count the number of missing
 values for all columns by group
 
 ## Installation
@@ -16,13 +16,13 @@ You can install the development version of countAllMissingByGroup by
 calling:
 
 ``` r
-devtools::install_github("UBC-STAT545-F2026/assignmentB2YouminKim")
+devtools::install_github("UBC-STAT545-F2026/assignmentB2YouminKim",ref="0.1.0")
 ```
 
 ## Example
 
 This is a basic example which computes the number of missing values in
-the `airquality` dataset grouped by the `cyl` column.
+the `airquality` dataset grouped by the `Month` column.
 
 ``` r
 library(countAllMissingByGroup)

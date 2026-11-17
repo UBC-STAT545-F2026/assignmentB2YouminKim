@@ -1,5 +1,5 @@
 Package: countAllMissingByGroup
-Title: What the Package Does (One Line, Title Case)
+Title: Count Missing Values by Group
 Version: 0.1.0
 Authors@R: 
     person("You-Min", "Kim", , "youkim@student.ubc.ca", role = c("aut", "cre"))
